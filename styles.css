@@ -1,0 +1,638 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-weight: bolder;
+
+  background-image: linear-gradient(to bottom, rgba(109, 230, 179, 0.6), rgba(224, 153, 94, 0.3)), url("./images/shine.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+
+}
+
+.container {
+  position: absolute;
+  top: 200px;
+  max-width: 100%;
+  opacity: 0.9;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.margrer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 220px;
+
+}
+
+.nav {
+  border-bottom: solid black 1px;
+  height: 100px;
+  background-color: rgba(112, 104, 104, 0.5);
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.nav li {
+  font-size: 20px;
+  position: absolute;
+  border: solid rgb(255, 255, 255, 0.2) 2px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+h3 i {
+  left: 2px;
+}
+
+button i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+li a {
+  color: rgb(206, 228, 241);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+li:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: -10px -10px rgb(155, 205, 235, 0.5);
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+
+li:not(:hover) {
+  transition: 0.5s;
+}
+
+li i {
+  padding-left: 5px;
+}
+
+#shacharProj {
+  top: 30px;
+  color: white;
+  left: 68px;
+  border: none;
+  border-bottom: solid white 1px;
+}
+
+#shacharProj:hover {
+
+  transform: scale(1, 1);
+  box-shadow: none;
+
+}
+
+.homeLi {
+  left: 300px;
+  top: 30px;
+}
+
+.aboutLi {
+  left: 450px;
+  top: 30px;
+}
+
+.reportsLi {
+  left: 600px;
+  top: 30px;
+}
+
+.reportsLi i {
+  position: relative;
+  top: 2px;
+  font-size: 22px;
+}
+
+#errorsP {
+  color: red;
+  font-size: 20px;
+  position: relative;
+  top: 0px;
+  right: 50px;
+}
+
+.SearchBox {
+  position: absolute;
+  right: 200px;
+  top: 30px;
+}
+
+.SearchBox input {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+  left: 10px;
+}
+
+.SearchBox input:focus {
+  transform: scale(1.2, 1.2);
+  position: relative;
+  margin-right: 30px;
+  transition: 1s;
+  background-color: rgb(155, 205, 235);
+  ;
+
+}
+
+.SearchBox ::placeholder {
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.SearchBox input:not(:focus) {
+  transition: 1s;
+}
+
+.SearchBox button {
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.SearchBox button:hover {
+  background-color: rgb(155, 205, 235);
+  color: black;
+  box-shadow: 4px 4px rgb(155, 205, 235, 0.5);
+  transition: 0.5s;
+}
+
+.SearchBox button:not(:hover) {
+  transition: 0.5s;
+}
+
+.card {
+  /* background-image: linear-gradient(to bottom, rgba(169, 196, 236, 0.5), rgba(27, 27, 56, 0.7)),url("sky.jpg");  */
+  width: 250px;
+  height: 250px;
+  margin: 25px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bolder;
+  box-shadow: -10px -5px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(253, 217, 9, 0.7));
+  position: relative;
+  border-radius: 25px;
+}
+
+.card:hover {
+  top: 10px;
+  transition: 0.5s;
+}
+
+.card:not(:hover) {
+  top: 0;
+  transition: 0.5s;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: rgb(0, 0, 0);
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.card-header img {
+  width: 40px;
+  border-radius: 50%;
+
+}
+
+.card-header img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
+
+}
+
+.card-header img:not(:hover) {
+
+  transition: 1s;
+
+}
+
+.card-header {
+  background-color: rgba(rgb(255, 255, 255));
+  color: white;
+
+}
+
+.card .card-footer {
+  /* position: relative; */
+  position: relative;
+  bottom: 6px;
+  border-radius: 10px;
+  background-color: rgba(white);
+  border-top: solid rgb(233, 233, 214) 2px;
+}
+
+.card-title h3 img {
+  width: 50px;
+
+  padding-left: 5px;
+  float: right;
+  border-radius: 50%;
+}
+
+.card-title h3 img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
+
+}
+
+.card-title h3 {
+  border-top: solid rgb(255, 246, 246, 0.5) 1px;
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+  font-size: 25px;
+
+}
+
+.card-body {
+  font-weight: bold;
+  border-top: solid rgb(255, 255, 255, 0.7) 1px;
+  border-radius: 15px;
+  font-size: 15px;
+  color: white;
+  opacity: 0.9;
+}
+
+
+.card-title {
+  /* top: -85px; */
+  color: rgb(255, 217, 217);
+  background-color: rgba(122, 122, 194, 0.2);
+  position: relative;
+  bottom: 80px;
+}
+
+.card-footer button {
+  background-color: rgba(196, 196, 241, 0.3);
+  border: solid 1px rgba(232, 232, 248, 0.5);
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.card-footer button:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
+  box-shadow: -2px -2px rgb(61, 10, 104);
+}
+
+.card-footer button:not(:hover) {
+  transition: 0.5s;
+}
+
+#havven .card-header h3 {
+  font-size: 22px;
+}
+
+.card-body i {
+  font-size: 35px;
+  padding: 15px;
+  position: relative;
+  top: 15px;
+  color: white;
+  border-radius: 500%;
+
+}
+
+.card-body i:hover {
+  transform: scale(1.5, 1.5);
+  transition: 0.7s;
+}
+
+.card-body input {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+.card-title i {
+  float: right;
+  position: relative;
+  right: 120px;
+  padding: 5px;
+
+}
+
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(111, 187, 231, 0.6);
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255);
+}
+
+.loading {
+  position: relative;
+  bottom: 90px;
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+.hideButton {
+  float: left;
+  right: 100px;
+  width: 100px;
+}
+
+.infoBtn {
+  float: left;
+  left: 10px;
+}
+
+.homeBtn {
+  position: relative;
+  bottom: 50px;
+}
+
+#modal {
+  display: none;
+  /* Hidden by default */
+  position: relative;
+  z-index: 200;
+  /* Sit on top */
+  left: 0;
+  width: 90%;
+  /* Full width */
+  height: 40%;
+  /* Full height */
+  overflow: auto;
+  background-color: rgba(66, 65, 61, 0.885);
+  top: 100px;
+
+}
+
+.modal-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  border: solid rgb(14, 7, 7, 0.5) 5px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  height: fit-content;
+  border: 1px solid #888;
+  width: 100%;
+  /* Could be more or less, depending on screen size */
+  display: inline-block;
+  position: relative;
+}
+
+.modal-header h2 {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  top: -15px;
+  width: 100%;
+  font-size: 20px;
+}
+
+
+
+.modal h4 {
+  width: 100%;
+  top: 40px;
+  position: absolute;
+}
+
+/* The Close Button */
+.button-span {
+  color: #aaa;
+  font-size: 20px;
+  font-weight: bold;
+  border: solid black 1px;
+  position: relative;
+  border-top: white;
+  background-color: rgb(20, 19, 19, 0.7);
+  height: 80px;
+  padding: 20px;
+}
+
+.button-span .closeModal {
+  position: relative;
+  border-radius: 20px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(0, 0, 0);
+  height: 75px;
+  bottom: 15px;
+}
+
+.closeModal:hover {
+  background-color: rgba(79, 238, 92, 0.6);
+  color: white;
+  transition: 0.5s;
+}
+
+.closeModal:not(:hover) {
+  transition: 0.5s;
+}
+
+/* .closeModal:focus {
+  background-color: green;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
+.noteModal {
+  position: relative;
+  font-weight: bold;
+  color: white;
+  border-bottom: solid rgba(255, 255, 255, 0.7) 3px;
+  border-radius: 25%;
+}
+
+.cardPersonal {
+  width: 500px;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+  font-weight: bold;
+  box-shadow: -15px -5px rgb(7, 6, 6, 0.4);
+}
+
+.cardPersonal:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s;
+  position: relative;
+  margin-top: 100px;
+}
+
+.cardPersonal:not(:hover) {
+  transition: 1s;
+}
+
+.cardPersonal textarea {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(27, 27, 56, 0);
+  color: white;
+  font-size: 18px;
+  position: relative;
+  resize: none;
+  border: solid rgb(255, 255, 255, 0.5) 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cardPersonal img {
+  margin-left: 40px;
+  width: 50px;
+  height: 50px;
+
+}
+
+
+#chartContainer {
+
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+.ChartsButton {
+  position: relative;
+  top: 550px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(15, 7, 7, 0.7);
+  color: rgba(126, 245, 171);
+  border-radius: 25%;
+  width: 120px;
+  right: 130px;
+}
+
+.ChartsButton:hover {
+  background-color: rgba(126, 245, 171);
+  color: black;
+}
+
+.hide {
+  left: 20px;
+}
+
+#wbtc .card-header h3 {
+  font-size: 20px;
+}
+
+#cro .card-header h3 {
+  font-size: 20px;
+}
+
+#snx .card-header h3 {
+  font-size: 19px;
+}
+
+#cel .card-header h3 {
+  font-size: 19px;
+}
+
+#theta .card-header h3 {
+  font-size: 19px;
+}
+
+#etc .card-header h3 {
+  font-size: 19px;
+}
+
+#omg .card-header h3 {
+  font-size: 19px;
+}
